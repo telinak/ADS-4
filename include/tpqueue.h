@@ -2,22 +2,22 @@
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
 #include <cassert>
-
 template<typename T>
-class TPQueue { 
-  private: 
-  T* arr;
-  int size;
-  int begin, end;
-  int count;
+class TPQueue {
+  // Сюда помещается описание структуры "Очередь с приоритетами"
+ private:
+    T* arr;
+    int size;
+    int begin, end;
+    int count;
  public:
-  TPQueue();
-  ~TPQueue();
-  void push(const T&);
-  T pop();
-  T get() const;
-  bool isFull() const;
-  bool isEmpty() const;
+    TPQueue();
+    ~TPQueue();
+    void push(const T&);
+    T pop();
+    T get() const;
+    bool isFull() const;
+    bool isEmpty() const;
 };
 
 template<typename T>
@@ -78,11 +78,6 @@ template<typename T>
 bool TPQueue<T>::isEmpty() const {
   return count == 0;
 }
-struct SYM {
-  char ch;
-  int  prior;
-};
-
 struct SYM {
   char ch;
   int  prior;
