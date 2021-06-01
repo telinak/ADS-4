@@ -4,20 +4,20 @@
 #include <cassert>
 
 template<typename T>
-class TPQueue {
-  private:
-    T* arr;
-    int size;
-    int begin, end;
-    int count;
+class TPQueue { 
+  private: 
+  T* arr;
+  int size;
+  int begin, end;
+  int count;
  public:
-    TPQueue();
-    ~TPQueue();
-    void push(const T&);
-    T pop();
-    T get() const;
-    bool isFull() const;
-    bool isEmpty() const;
+  TPQueue();
+  ~TPQueue();
+  void push(const T&);
+  T pop();
+  T get() const;
+  bool isFull() const;
+  bool isEmpty() const;
 };
 
 template<typename T>
